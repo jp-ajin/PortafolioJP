@@ -1,0 +1,103 @@
+body {
+	background: #d5d5d5;
+	padding: 1rem;
+}
+
+h1 {
+	text-align: center;
+	color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 0;
+}
+hr {
+	background-image: linear-gradient(
+		to right,
+		transparent,
+		#25e7c3,
+		transparent
+	);
+	border: 0;
+	height: 0.2rem;
+	max-width: 100%;
+}
+.main {
+	display: flex;
+	margin-top: 5rem;
+}
+.container {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+}
+.widget {
+	height: 320px;
+	width: 55%;
+}
+.content {
+	background: #2d034f;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.content span {
+	margin: 0.6rem 0;
+}
+.time {
+	font-size: 2.7rem;
+	color: #ffc800;
+}
+.date {
+	font-size: 1.7rem;
+	color: white;
+}
+.weather {
+	display: flex;
+	justify-content: space-evenly;
+}
+.icon {
+	width: 5rem;
+}
+.temp {
+	font-size: 2.5rem;
+	color: #ffc800;
+}
+.place {
+	font-size: 1.7rem;
+	color: white;
+}
+
+/* Form Styles */
+.container2 {
+	width: 25%;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+form label {
+	margin: 0.7rem 0;
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1.2rem;
+}
+#range {
+	width: 90%;
+}
+.divRange {
+	display: flex;
+	gap: 1rem;
+}
+.rangeValue {
+	float: right;
+}
+#degrees {
+	padding: 5px;
+	border-radius: 10px;
+}
+.container3 {
+	width: 33%;
+}
+.info {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 1.2rem;
+}

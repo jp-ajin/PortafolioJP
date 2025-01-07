@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0 user-scalable=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="estilo.css" />
+		<script src="jquery-3.6.1.min.js"></script>
+		<title>Portafolio Josué Pablo</title>
+	</head>
+
+	<body>
+		<section id="inicio">
+			<header>
+				<div class="contenido-header">
+					<h1>JP</h1>
+					<nav id="nav">
+						<ul id="links">
+							<li>
+								<a
+									class="link active"
+									href="#inicio"
+									onclick="seleccionar(this)"
+									>INICIO</a
+								>
+							</li>
+							<li>
+								<a class="link" href="#habilidades" onclick="seleccionar(this)"
+									>TECNOLOGIAS</a
+								>
+							</li>
+							<li>
+								<a class="link" href="#skills" onclick="seleccionar(this)"
+									>CONOCIMIENTO</a
+								>
+							</li>
+							<li>
+								<a class="link" href="#portafolio" onclick="seleccionar(this)"
+									>PORTAFOLIO</a
+								>
+							</li>
+							<li>
+								<a class="link" href="#contacto" onclick="seleccionar(this)"
+									>CONTACTO</a
+								>
+							</li>
+						</ul>
+					</nav>
+
+					<!-- Icono del menu responsive -->
+					<div id="icono-nav" onclick="responsiveMenu()">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+				</div>
+			</header>
+			<div class="presentacion">
+				<h2>Josué Pablo Ajín Flores</h2>
+				<p class="descripcion">Programador Web Junior</p>
+				<a class="link" href="#portafolio">Ir a Portafolio</a>
+			</div>
+		</section>
+
+		<section id="habilidades">
+			<h3 class="titulo-seccion">TECNOLOGIAS</h3>
+			<hr />
+			<div class="container-grid">
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/html5.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">HTMl</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/css.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">CSS</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/bootstrap.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">BOOTSTRAP</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img
+							style="border-radius: 1rem"
+							src="img/logos/icons8-tailwindcss.svg"
+						/>
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">TAILWIND</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/git.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">GIT</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/Github_light.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">GITHUB</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img style="border-radius: 1rem" src="img/logos/javascript.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">JAVASCRIPT</span>
+					</div>
+				</div>
+
+				<div class="container-item">
+					<div class="container-logo">
+						<img style="border-radius: 1rem" src="img/logos/jquery.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">JQUERY</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/react.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">REACT</span>
+					</div>
+				</div>
+
+				<div class="container-item">
+					<div class="container-logo">
+						<img style="border-radius: 1rem" src="img/logos/openproject.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">OPEN PROJECT</span>
+					</div>
+				</div>
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/linux.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">LINUX</span>
+					</div>
+				</div>
+
+				<div class="container-item">
+					<div class="container-logo">
+						<img src="img/logos/vscode.svg" />
+					</div>
+					<div class="logo-name">
+						<span class="tooltip">VSCODE</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="contenedor-skills">
+			<h3>NIVEL DE CONOCIMIENTOS</h3>
+			<div class="skill">
+				<div class="info">
+					<p><span class="lista"> </span>Html / Css</p>
+					<span class="porcentaje">75%</span>
+				</div>
+				<div class="barra">
+					<div class="" id="html"></div>
+				</div>
+			</div>
+			<div class="skill">
+				<div class="info">
+					<p><span class="lista"> </span>Tailwind / Bootstrap</p>
+					<span class="porcentaje">50%</span>
+				</div>
+
+				<div class="barra">
+					<div class="" id="frameworks"></div>
+				</div>
+			</div>
+			<div class="skill">
+				<div class="info">
+					<p><span class="lista"> </span>JavaScript</p>
+					<span class="porcentaje">60%</span>
+				</div>
+
+				<div class="barra">
+					<div class="" id="js"></div>
+				</div>
+			</div>
+			<div class="skill">
+				<div class="info">
+					<p><span class="lista"> </span>React JS / React Native</p>
+					<span class="porcentaje">40%</span>
+				</div>
+
+				<div class="barra">
+					<div class="" id="react"></div>
+				</div>
+			</div>
+			<div class="skill">
+				<div class="info">
+					<p><span class="lista"> </span>Git / GitHub</p>
+					<span class="porcentaje">50%</span>
+				</div>
+
+				<div class="barra">
+					<div class="" id="git"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="portafolio">
+			<h3 class="titulo-seccion">PORTAFOLIO</h3>
+			<hr />
+			<div
+				style="
+					display: grid;
+					grid-template-columns: auto auto auto;
+					justify-content: center;
+				"
+			>
+				<div>
+					<div class="fila">
+						<div class="proyecto">
+							<a href="email-template/index.html" target="_blank">
+								<img src="img/Plantilla-HTML.png" alt="" />
+								<div class="info">
+									<h4>Plantilla para E-mail</h4>
+									<p>Tecnologías HTML y CSS</p>
+								</div>
+							</a>
+						</div>
+						<div class="proyecto">
+							<a
+								href="https://jp-ajin.github.io/frontend-dev-javascript/"
+								target="_blank"
+							>
+								<img src="img/Shop.png" alt="" />
+								<div class="info">
+									<h4>Maquetado menú responsive</h4>
+									<p>Usando HTML, CSS y JAVASCRIPT</p>
+								</div>
+							</a>
+						</div>
+						<div class="proyecto">
+							<a href="./widgetProject/index.html" target="_blank">
+								<img src="./img/widget.jpeg" alt="" />
+								<div class="info">
+									<h4>Widget del clima</h4>
+									<p>Tecnologías: HTML, CSS, JAVASCRIPT</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="fila">
+						<div class="proyecto">
+							<a
+								href="https://jp-ajin.github.io/react-prj-TODO/"
+								target="_blank"
+							>
+								<img src="img/TODO.jpeg" alt="" />
+								<div class="info">
+									<h4>Lista de Tareas (TODO)</h4>
+									<p>React JS, Css, manejo del Local Storage</p>
+								</div>
+							</a>
+						</div>
+						<div class="proyecto">
+							<a href="/reactNative/index.html" target="_blank">
+								<img class="img" src="img/App Mobile.jpeg" alt="" />
+								<div class="info">
+									<h4>App Android</h4>
+									<p>Tecnología: React Native</p>
+								</div>
+							</a>
+						</div>
+						<!-- <div class="proyecto" data-name="p-6">
+							<img src="img/proyecto6.jpg" alt="" />
+							<div class="info">
+								<h4>Descripcion Proyecto</h4>
+								<p>Diseño Web</p>
+							</div>
+						</div> -->
+					</div>
+					<!-- <div class="fila">
+						<div class="proyecto" data-name="p-7">
+							<img src="img/proyecto7.jpg" alt="" />
+							<div class="info">
+								<h4>Descripcion Proyecto</h4>
+								<p>Diseño Web</p>
+							</div>
+						</div>
+						<div class="proyecto" data-name="p-8">
+							<img src="img/proyecto8.jpg" alt="" />
+							<div class="info">
+								<h4>Descripcion Proyecto</h4>
+								<p>Diseño Web</p>
+							</div>
+						</div>
+						<div class="proyecto" data-name="p-9">
+							<img src="img/proyecto9.jpg" alt="" />
+							<div class="info">
+								<h4>Descripcion Proyecto</h4>
+								<p>Diseño Web</p>
+							</div>
+						</div>
+						<div id="modal">
+							<dialog class="preview" id="preview" data-target="p-1">
+								<video width="100%" height="100%" controls>
+									<source src="img/video_galeria.mp4" type="video/mp4" />
+								</video>
+								<span id="modal-content"
+									>Aplicación Web para la gestión de ordenes de producción.<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" id="preview" data-target="p-2">
+								<img src="img/proyecto2.jpg" alt="" />
+								<span id="modal-content"
+									>Red Social<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" data-target="p-3">
+								<img src="img/proyecto3.jpg" alt="" />
+								<span id="modal-content"
+									>Video Sobre Mecanica<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" data-target="p-4">
+								<video width="100%" height="100%" controls>
+									<source src="img/video4.mp4" type="video/mp4" />
+								</video>
+								<span id="modal-content"
+									>Aplicación Web para la gestión de ordenes de producción.<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" data-target="p-5">
+								<img src="img/proyecto5.jpg" alt="" />
+								<span id="modal-content"
+									>Red Social<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" data-target="p-6">
+								<img src="img/proyecto6.jpg" alt="" />
+								<span id="modal-content"
+									>Video Sobre Mecanica<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" data-target="p-7">
+								<video width="100%" height="90%" controls>
+									<source src="img/video7.mp4" type="video/mp4" />
+								</video>
+								<span id="modal-content"
+									>Aplicación Web para la gestión de ordenes de producción.<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" data-target="p-8">
+								<img src="img/proyecto9.jpg" alt="" />
+								<span id="modal-content"
+									>Red Social<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+							<dialog class="preview" data-target="p-9">
+								<img src="img/proyecto9.jpg" alt="" />
+								<span id="modal-content"
+									>Video Sobre Mecanica<br />
+									Tecnologías utilizadas: html, css, javascript, php, jquery,
+									bootstrap.</span
+								>
+								<button class="btn-cerrar-modal">Salir</button>
+							</dialog>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+		<section id="contacto">
+			<h3 class="titulo-seccion">CONTACTO</h3>
+			<hr />
+			<div class="contenedor-form">
+				<form method="POST" action="">
+					<div class="fila mitad">
+						<input
+							type="text"
+							name="name"
+							placeholder="Nombre Completo"
+							class="input-mitad"
+							required
+						/>
+						<!--span name="email" >pabloajin16@gmail.com</span-->
+						<!-- <input
+							type="email"
+							name="email"
+							value="pabloajin16@gmail.com"
+							class="input-mitad"
+							disabled
+						/> -->
+					</div>
+					<div class="fila">
+						<input
+							type="text"
+							name="asunto"
+							placeholder="Asunto..."
+							class="input-full"
+							required
+						/>
+					</div>
+					<div class="fila">
+						<textarea
+							name="msg"
+							id=""
+							cols="30"
+							rows="10"
+							placeholder="Mensaje..."
+							class="input-full"
+							required
+						></textarea>
+					</div>
+
+					<input
+						type="submit"
+						name="enviar"
+						value="Enviar Mensaje"
+						class="btn-enviar"
+					/>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer">
+				<p>
+					&copy; <span id="year"></span> JP - Todos los derechos reservados.
+				</p>
+			</div>
+			<div class="footer">
+				<p>(+502) 5671 0125</p>
+			</div>
+			<div class="footer"><p>E-mail: pabloajin16@gmail.com</p></div>
+			<!-- <div class="redes"></div> -->
+		</footer>
+		<script src="script.js"></script>
+		<?php
+        include("correo.php");
+    ?>
+	</body>
+</html>

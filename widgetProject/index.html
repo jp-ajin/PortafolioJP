@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Weather Widget</title>
+	</head>
+	<body>
+		<h1>Widget del Clima</h1>
+		<hr />
+		<section class="main">
+			<section class="container">
+				<div class="widget">
+					<div class="content">
+						<span class="time"></span>
+						<span class="date"></span>
+						<div class="weather">
+							<div class="divIcon">
+								<img src="" alt="" class="icon" />
+							</div>
+							<span class="temp"></span>
+						</div>
+						<span class="place"></span>
+					</div>
+				</div>
+			</section>
+			<section class="container2">
+				<form
+					action=""
+					class="form"
+					name="myform"
+					oninput="rangevalue.value = range.valueAsNumber"
+				>
+					<label for="bg-color">Color de Fondo</label>
+					<input type="color" id="bg-color" value="#2d034f" name="bg-color" />
+					<label for="txt-color">Color del Texto</label>
+					<input type="color" id="txt-color" value="#ffc800" />
+					<label>Grados</label>
+					<select title="degrees" id="degrees">
+						<option value="c" selected>Celsius</option>
+						<option value="f">Fahrenheit</option>
+					</select>
+					<label for="range">Borde Redondeado</label>
+					<div class="divRange">
+						<input type="range" id="range" step="1" min="0" max="4" value="0" />
+						<output class="rangeValue" name="rangevalue" for="range">0</output>
+					</div>
+				</form>
+			</section>
+			<section class="container3">
+				<p class="info">
+					El proyecto consiste en mostrar en un estilo de widget el clima, la
+					hora y fecha actual. <br /><br />
+					Para el desarrollo se utilizan tecnologías como: <br /><br />
+					<strong>HTML y CSS</strong> para la estructura y diseño. <br /><br />
+					<strong>JAVASCRIPT</strong> para obtener la hora y fecha, así también
+					para el consumo del
+					<strong>
+						<a href="https://www.weatherapi.com/" title="Free Weather API"
+							>WeatherAPI.com</a
+						>
+					</strong>
+					y obtener el clima actual. <br /><br />Manipulación del
+					<strong>DOM</strong> para editar en tiempo real los estilos.
+				</p>
+			</section>
+		</section>
+	</body>
+	<script src="./script.js"></script>
+</html>
