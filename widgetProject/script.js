@@ -38,7 +38,7 @@ function getCoords() {
 }
 
 async function getWeather(lat, lon) {
-	const url = `http://api.weatherapi.com/v1/forecast.json?key=a4697499ebce4d74b91162838240907&q=${lat},${lon}&days=3&lang=es`;
+	const url = `https://api.weatherapi.com/v1/forecast.json?key=a4697499ebce4d74b91162838240907&q=${lat},${lon}&days=3&lang=es`;
 	try {
 		const response = await fetch(url);
 		if (!response.ok) {
